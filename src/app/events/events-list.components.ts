@@ -6,6 +6,7 @@ import { Component } from '@angular/core'
   <div>
     <h1Upcoming Angular Events</h1>
   </div>
+  <img src="/assets/images/angular.png"/>
   `
 })
 
