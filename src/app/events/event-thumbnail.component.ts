@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input , Output , EventEmitter} from '@angular/core'
 
 @Component({
     selector: 'event-thumbnail',
@@ -13,6 +13,8 @@ import { Component, Input } from '@angular/core'
     <span>&nbsp;</span>
     <span>{{eventOtherOne.location.city}},{{eventOtherOne.location.country}}</span>
     </div>
+    <button class="btn btn-primary" (click)="handleClickMe()"
+    > Click me ! </button>
 </div>
 <img src="/assets/images/angular.png"/>
 `
@@ -22,4 +24,10 @@ export class EventThumbnaulComponent{
    // Input tels Angular, that this event would be passed by another component
     @Input() eventOtherOne:any
    
+    @Output() eventClick = new EventEmitter()
+    
+    
+    handleClickMe(){
+        this.eventClick.emit(this.eventOtherOne.name);
+    }
 }
