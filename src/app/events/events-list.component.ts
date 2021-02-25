@@ -6,8 +6,11 @@ import { Component } from '@angular/core'
  <div>
   <h1>Upcoming Angular Events</h1>
   <hr/>
-  <event-thumbnail [eventOtherOne]="event1"></event-thumbnail>
- </div>
+  <event-thumbnail #ThisIsLocalVariable [eventOtherOne]="event1"></event-thumbnail>
+  <h3>{{ThisIsLocalVariable.someProperty}}</h3>
+  <button class="btn btn-primary" (click)="ThisIsLocalVariable.logFoo()">
+  Log me some foo </button>
+  </div>
 `
 // To This [eventOtherOne]- (other one)
   // From this component "event1" (current)
