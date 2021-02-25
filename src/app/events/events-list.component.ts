@@ -15,14 +15,14 @@ export class EventsListComponent{
   event1 = { 
     id: 1, 
     name: 'Daniel',
-    date: '9/26/2036',
+    date: '2/24/2021',
     time: '10:00am',
-    price: 599.99,
+    price: 799.99,
     imageUrl: '/assets/images/angular.png',
     location: { 
-      address: '1057 DT',
-      city: 'London',
-      country: 'England'
+      address: 'PamPam',
+      city: 'Vilnius',
+      country: 'Lithuania'
     }
   }
 }
