@@ -10,12 +10,15 @@ import { Component, Input} from '@angular/core'
     <div>Price: \${{eventOtherOne.price}}</div>
     <div>
     <span>Location: {{eventOtherOne.location.address}}</span>
-    <span>&nbsp;</span>
-    <span>{{eventOtherOne.location.city}},{{eventOtherOne.location.country}}</span>
+    <span class="pad-left">{{eventOtherOne.location.city}},{{eventOtherOne.location.country}}</span>
     </div>
 </div>
 <img src="/assets/images/angular.png"/>
-`
+`,
+ styles:[`
+    .pad-left{margin-left: 10px}
+    .hoverwell div { color: #bbb; }
+ `]
 })
 
 export class EventThumbnaulComponent{
