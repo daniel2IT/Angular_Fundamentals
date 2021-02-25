@@ -21,12 +21,4 @@ import { Component, Input} from '@angular/core'
 export class EventThumbnaulComponent{
    // Input tels Angular, that this event would be passed by another component
     @Input() eventOtherOne:any
-
-    someProperty:any = "some value";
-    
-
-    logFoo(){
-        console.log('foo')
-    }
-
 }

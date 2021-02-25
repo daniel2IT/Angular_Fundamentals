@@ -6,17 +6,10 @@ import { Component } from '@angular/core'
  <div>
   <h1>Upcoming Angular Events</h1>
   <hr/>
-  <event-thumbnail #ThisIsLocalVariable [eventOtherOne]="event1"></event-thumbnail>
-  <h3>{{ThisIsLocalVariable.someProperty}}</h3>
-  <button class="btn btn-primary" (click)="ThisIsLocalVariable.logFoo()">
-  Log me some foo </button>
+  <event-thumbnail [eventOtherOne]="event1"></event-thumbnail>
   </div>
 `
-// To This [eventOtherOne]- (other one)
-  // From this component "event1" (current)
-//./events-list-component.html'
 })
-
 
 export class EventsListComponent{
   event1 = { 
@@ -33,4 +26,3 @@ export class EventsListComponent{
     }
   }
 }
-// Change
