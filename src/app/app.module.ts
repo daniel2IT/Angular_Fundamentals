@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { EventsAppComponent } from './events-app.component';
 import { EventsListComponent } from './events/events-list.component';
 import { EventThumbnaulComponent } from './events/event-thumbnail.component';
+import { NavBarComponent } from './nav/navbar.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { EventThumbnaulComponent } from './events/event-thumbnail.component';
   declarations: [
     EventsAppComponent,
     EventsListComponent,
-    EventThumbnaulComponent
+    EventThumbnaulComponent,
+    NavBarComponent
   ],
   bootstrap: [EventsAppComponent]
 })
