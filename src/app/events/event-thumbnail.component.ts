@@ -17,7 +17,7 @@ import { Component, Input} from '@angular/core'
 `,
  styles:[`
     .pad-left{margin-left: 10px}
-    .hoverwell div { color: #bbb; }
+    .well div { color: #FF0000; }
  `]
 })
 
