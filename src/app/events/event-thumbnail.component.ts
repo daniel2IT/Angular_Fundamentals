@@ -9,9 +9,12 @@ import { Component, Input} from '@angular/core'
     <div>Time {{eventOtherOne?.time}}</div>
     <div>Price: \${{eventOtherOne?.price}}</div>
     <div>
-    <span>Location: {{eventOtherOne?.location.address}}</span>
-    <span class="pad-left">{{eventOtherOne?.location.city}},{{eventOtherOne?.location.country}}</span>
+    <span>Location: {{eventOtherOne?.location?.address}}</span>
+    <span class="pad-left">{{eventOtherOne?.location?.city}},{{eventOtherOne?.location?.country}}</span>
     </div>
+  <div>
+   Online URL: {{eventOtherOne?.onlineUrl}}
+   </div>
 </div>
 <img src="/assets/images/angular.png"/>
 `,
