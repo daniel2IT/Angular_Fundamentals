@@ -12,7 +12,7 @@ import { Component, Input} from '@angular/core'
     <span>Location: {{eventOtherOne?.location?.address}}</span>
     <span class="pad-left">{{eventOtherOne?.location?.city}},{{eventOtherOne?.location?.country}}</span>
     </div>
-  <div>
+  <div *ngIf="eventOtherOne?.onlineUrl">
    Online URL: {{eventOtherOne?.onlineUrl}}
    </div>
 </div>
