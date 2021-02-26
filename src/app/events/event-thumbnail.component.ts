@@ -16,12 +16,14 @@ import { Component, Input} from '@angular/core'
 <img src="/assets/images/angular.png"/>
 `,
  styles:[`
-    .pad-left{margin-left: 10px}
+    .thumbnail { min-height:210px; }
+    .pad-left{margin-left: 10px; }
     .hoverwell div { color: #bbb; }
  `]
 })
 
 export class EventThumbnaulComponent{
-   // Input tels Angular, that this event would be passed by another component
+   // Input tels Angular, that this 
+   //event would be passed by another component
     @Input() eventOtherOne:any
 }
