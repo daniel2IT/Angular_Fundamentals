@@ -6,8 +6,7 @@ import { Component, Input} from '@angular/core'
 <div class="well hoverwell thumbnail">
     <h2>{{eventOtherOne?.name}}</h2>
     <div>Date: {{eventOtherOne?.date}}</div>
-    <div [ngClass]="{green: eventOtherOne?.time ==='8:00 am',
-                    bold: eventOtherOne?.time === '8:00 am'}"
+    <div [ngClass]="getStartTimeClass()"
     [ngSwitch]="eventOtherOne?.time">
         Time {{eventOtherOne?.time}}
         <span *ngSwitchCase="'8:00 am'"> (Early Start)</span>
@@ -39,4 +38,11 @@ export class EventThumbnaulComponent{
    // Input tels Angular, that this 
    //event would be passed by another component
     @Input() eventOtherOne:any
+
+    getStartTimeClass(){
+        if(this.eventOtherOne && this.eventOtherOne.time === '8:00 am')
+            return ['green bold']
+        return []
+     }
+    
 }
