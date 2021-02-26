@@ -39,10 +39,10 @@ export class EventThumbnaulComponent{
    //event would be passed by another component
     @Input() eventOtherOne:any
 
-    getStartTimeStyle(){
+    getStartTimeStyle():any{
         if(this.eventOtherOne && this.eventOtherOne.time === '8:00 am')
             return {'color': '#003300', 'font-weight': 'bold'}
-        return []
+        return {}
      }
     
 }
