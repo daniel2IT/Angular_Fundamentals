@@ -6,7 +6,8 @@ import { Component, Input} from '@angular/core'
 <div class="well hoverwell thumbnail">
     <h2>{{eventOtherOne?.name}}</h2>
     <div>Date: {{eventOtherOne?.date}}</div>
-    <div [class.green]="eventOtherOne?.time ==='8:00 am'"
+    <div [ngClass]="{green: eventOtherOne?.time ==='8:00 am',
+                    bold: eventOtherOne?.time === '8:00 am'}"
     [ngSwitch]="eventOtherOne?.time">
         Time {{eventOtherOne?.time}}
         <span *ngSwitchCase="'8:00 am'"> (Early Start)</span>
@@ -27,6 +28,7 @@ import { Component, Input} from '@angular/core'
 `,
  styles:[`
     .green { color: #003300 !important; }
+    .bold { fonr-weight: bold; } 
     .thumbnail { min-height:210px; }
     .pad-left{margin-left: 10px; }
     .hoverwell div { color: #bbb; }
