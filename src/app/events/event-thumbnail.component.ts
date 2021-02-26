@@ -8,11 +8,11 @@ import { Component, Input} from '@angular/core'
     <div>Date: {{eventOtherOne?.date}}</div>
     <div>Time {{eventOtherOne?.time}}</div>
     <div>Price: \${{eventOtherOne?.price}}</div>
-    <div *ngIf="eventOtherOne?.location">
+    <div [hidden]="!eventOtherOne?.location">
     <span>Location: {{eventOtherOne?.location?.address}}</span>
     <span class="pad-left">{{eventOtherOne?.location?.city}},{{eventOtherOne?.location?.country}}</span>
     </div>
-  <div *ngIf="eventOtherOne?.onlineUrl">
+  <div [hidden]="!eventOtherOne?.onlineUrl">
    Online URL: {{eventOtherOne?.onlineUrl}}
    </div>
 </div>
