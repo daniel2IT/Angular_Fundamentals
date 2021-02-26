@@ -4,13 +4,13 @@ import { Component, Input} from '@angular/core'
     selector: 'event-thumbnail',
     template:`
 <div class="well hoverwell thumbnail">
-    <h2>{{eventOtherOne.name}}</h2>
-    <div>Date: {{eventOtherOne.date}}</div>
-    <div>Time {{eventOtherOne.time}}</div>
-    <div>Price: \${{eventOtherOne.price}}</div>
+    <h2>{{eventOtherOne?.name}}</h2>
+    <div>Date: {{eventOtherOne?.date}}</div>
+    <div>Time {{eventOtherOne?.time}}</div>
+    <div>Price: \${{eventOtherOne?.price}}</div>
     <div>
-    <span>Location: {{eventOtherOne.location.address}}</span>
-    <span class="pad-left">{{eventOtherOne.location.city}},{{eventOtherOne.location.country}}</span>
+    <span>Location: {{eventOtherOne?.location.address}}</span>
+    <span class="pad-left">{{eventOtherOne?.location.city}},{{eventOtherOne?.location.country}}</span>
     </div>
 </div>
 <img src="/assets/images/angular.png"/>
