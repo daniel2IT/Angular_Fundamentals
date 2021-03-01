@@ -15,7 +15,7 @@ import { EventService } from '../events/shared/event.service'
 
 export class EventDetailsComponent
 {
-    event: { id: number; name: string; date: string; time: string; price: number; imageUrl: string; location: { address: string; city: string; country: string; }; sessions: { id: number; name: string; presenter: string; duration: number; level: string; abstract: string; voters: string[]; }[]; onlineUrl?: undefined; } | { ...; } | undefined;
+    event: any;
     
     constructor(private eventService:EventService){
 
