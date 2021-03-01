@@ -10,7 +10,7 @@ import { EventService } from '../events/shared/event.service'
             padding-left:20px; 
             padding-right:20px;
         }
-        .event-image: { height: 100px; }
+        .event-image { height: 100px; }
     `]
 })
 
