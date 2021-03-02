@@ -21,7 +21,9 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    StoreModule.forRoot({ message: simpleReducer }),
+    StoreModule.forRoot({ 
+      message: simpleReducer 
+    }),
  
     EffectsModule.forRoot([]),
     StoreRouterConnectingModule.forRoot()
