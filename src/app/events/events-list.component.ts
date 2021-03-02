@@ -4,8 +4,12 @@ import { ToastrService } from '../common/toastr.service'
 
 @Component({
  template: `
+
 <div>
   <h1>Upcoming Angular Events</h1>
+  
+
+
   <hr/>
   <div class="row"> 
     <div *ngFor="let event of event1" class="col-md-5">

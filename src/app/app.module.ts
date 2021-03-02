@@ -11,12 +11,20 @@ import { ToastrService } from './common/toastr.service';
 import { EventDetailsComponent } from './event-details/event-details.component';
 import { appRoutes } from './routes';
 import { RouterModule } from '@angular/router';
+import { StoreModule } from '@ngrx/store';
+import { simpleReducer } from './reducers/simple.reducer';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreRouterConnectingModule } from '@ngrx/router-store';
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    StoreModule.forRoot({ message: simpleReducer }),
+ 
+    EffectsModule.forRoot([]),
+    StoreRouterConnectingModule.forRoot()
   ],
   declarations: [
     EventsAppComponent,
